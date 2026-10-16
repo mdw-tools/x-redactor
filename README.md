@@ -1,4 +1,4 @@
-# X Redactor
+# Redactor for X
 
 A Chrome extension that cleans up profanity on x.com. Choose one of three modes:
 

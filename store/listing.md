@@ -9,7 +9,7 @@ Upload `dist/x-redactor-<version>.zip`. Bump `version` in `manifest.json` for ev
 
 ## Store listing tab
 
-**Name** (from the manifest): X Redactor
+**Name** (from the manifest): Redactor for X
 
 **Summary** (from the manifest): Censors profanity on x.com, or hides posts that contain it.
 
@@ -18,7 +18,7 @@ Upload `dist/x-redactor-<version>.zip`. Bump `version` in `manifest.json` for ev
 ```
 Read x.com without the swearing.
 
-X Redactor finds profanity in posts and handles it the way you choose:
+Redactor for X finds profanity in posts and handles it the way you choose:
 
 • Censor the words in place
 • Collapse the post behind a "click to show" bar
@@ -32,11 +32,11 @@ FEATURES
 • Never changes what you type
 
 PRIVACY
-X Redactor runs entirely in your browser. It makes no network requests and collects no data. Your settings are stored with Chrome sync so they follow you between your own browsers.
+Redactor for X runs entirely in your browser. It makes no network requests and collects no data. Your settings are stored with Chrome sync so they follow you between your own browsers.
 
 Open source: https://github.com/mdw-tools/x-redactor
 
-X Redactor is an independent project and is not affiliated with or endorsed by X Corp.
+Redactor for X is an independent project and is not affiliated with or endorsed by X Corp.
 ```
 
 **Category:** Social Networking (or Well-being)
