@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "X Redactor",
+  "version": "0.1.0",
+  "description": "Censors profanity on x.com, or hides posts that contain it.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://mobile.x.com/*", "https://twitter.com/*", "https://mobile.twitter.com/*"],
+      "js": ["src/lib.js", "src/content.js"],
+      "css": ["src/content.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_title": "X Redactor",
+    "default_popup": "src/popup.html"
+  },
+  "options_ui": {
+    "page": "src/options.html",
+    "open_in_tab": true
+  }
+}
