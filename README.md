@@ -6,6 +6,8 @@ A Chrome extension that cleans up profanity on x.com. Choose one of three modes:
 - **Collapse**: hides posts that contain profanity behind a "click to show" bar.
 - **Remove**: drops those posts from the timeline entirely.
 
+Common workarounds are caught too: look-alike characters (`sh1t`, `a$$`), spelled-out words (`f.u.c.k`, `s h i t`), and styled or disguised Unicode letters (`𝐟𝐮𝐜𝐤`, `ｓｈｉｔ`, `fück`, zero-width characters, Cyrillic look-alikes).
+
 Text across the whole page is censored in every mode, including names, trends and the tab title. Text you are typing is never changed.
 
 ## Install

@@ -18,7 +18,12 @@
     <p>
       One entry per line, matched as a whole word regardless of case. Lines starting with <code>#</code> are comments.
       Use <code>*</code> for "any letters": <code>damn*</code> matches <em>damned</em>, <code>*shit*</code> matches
-      <em>bullshit</em>. Repeated letters are matched automatically (<em>shiiit</em>).
+      <em>bullshit</em>.
+    </p>
+    <p>
+      Common workarounds are caught automatically: stretched letters (<em>shiiit</em>), look-alike characters
+      (<em>sh1t</em>, <em>a$$</em>), spelled-out words (<em>f.u.c.k</em>, <em>s h i t</em>) and styled or disguised
+      Unicode letters (<em>𝐟𝐮𝐜𝐤</em>, <em>ｓｈｉｔ</em>, <em>fück</em>).
     </p>
     <textarea id="words" spellcheck="false"></textarea>
     <div class="buttons">
