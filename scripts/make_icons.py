@@ -7,6 +7,9 @@ import zlib
 SIZES = (16, 32, 48, 128)
 SAMPLES = 4  # supersampling per axis, for anti-aliasing
 
+# The Chrome Web Store wants the 128px icon to be 96px of artwork with 16px of transparent padding.
+PADDING = {128: 16}
+
 # Shapes on a 128x128 grid: (left, top, right, bottom, corner radius, RGB), drawn in order.
 SHAPES = (
     (0, 0, 128, 128, 28, (0x0F, 0x14, 0x19)),  # background
@@ -26,12 +29,13 @@ def inside(x, y, shape):
 
 
 def pixel(px, py, size):
-    scale = 128 / size
+    pad = PADDING.get(size, 0)
+    scale = 128 / (size - 2 * pad)
     r = g = b = a = 0.0
     for sy in range(SAMPLES):
         for sx in range(SAMPLES):
-            x = (px + (sx + 0.5) / SAMPLES) * scale
-            y = (py + (sy + 0.5) / SAMPLES) * scale
+            x = (px - pad + (sx + 0.5) / SAMPLES) * scale
+            y = (py - pad + (sy + 0.5) / SAMPLES) * scale
             color = None
             for shape in SHAPES:
                 if inside(x, y, shape):

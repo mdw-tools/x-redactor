@@ -23,3 +23,12 @@ Use **Edit word list…** in the popup to change which words are filtered. Patte
 ```sh
 node --test test/
 ```
+
+## Publish to the Chrome Web Store
+
+```sh
+scripts/package.sh              # runs the tests, then builds dist/x-redactor-<version>.zip
+node scripts/store-images.js    # renders the promo tile and screenshots into store/images/
+```
+
+The listing text, permission justifications and privacy answers are in [store/listing.md](store/listing.md). The privacy policy is [PRIVACY.md](PRIVACY.md).

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="shared.css" />
+    <style>
+      /* Crops of real x.com screenshots from store/source/ (git-ignored), in original pixels, shown at 0.544x. */
+      .shots { flex: none; width: 760px; display: flex; flex-direction: column; gap: 28px; }
+      .label { font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #8b98a5; margin-bottom: 10px; }
+      .frame { overflow: hidden; border: 1px solid #2f3336; border-radius: 12px; background: #000; }
+      .crop { position: relative; width: 1397px; transform: scale(0.544); transform-origin: 0 0; background-repeat: no-repeat; }
+      .blur { position: absolute; backdrop-filter: blur(14px); border-radius: 8px; }
+
+      .censored .frame { height: 109px; }
+      .censored .crop { height: 200px; background-image: url(../source/timeline-censored.png); background-position: -175px -92px; }
+      .collapsed .frame { height: 47px; }
+      .collapsed .crop { height: 87px; background-image: url(../source/timeline-collapsed.png); background-position: -299px -583px; }
+    </style>
+  </head>
+  <body>
+    <div class="copy">
+      <div class="brand"><img src="../../icons/icon128.png" alt="" /> X Redactor</div>
+      <h1>Swearing, redacted.</h1>
+      <p>Works right in your timeline. Censor the words, or collapse the whole post behind a "click to show" bar.</p>
+    </div>
+    <div class="shots">
+      <div class="censored">
+        <div class="label">Censor</div>
+        <div class="frame">
+          <div class="crop">
+            <div class="blur" style="left: 25px; top: 14px; width: 94px; height: 94px; border-radius: 50%"></div>
+            <div class="blur" style="left: 123px; top: 14px; width: 430px; height: 48px"></div>
+            <div class="blur" style="left: 470px; top: 152px; width: 102px; height: 44px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="collapsed">
+        <div class="label">Collapse</div>
+        <div class="frame"><div class="crop"></div></div>
+      </div>
+    </div>
+  </body>
+</html>

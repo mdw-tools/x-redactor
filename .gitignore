@@ -1,0 +1,4 @@
+dist/
+store/.preview/
+.DS_Store
+store/source/
